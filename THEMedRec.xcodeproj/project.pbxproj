@@ -25,6 +25,7 @@
 		C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8622D14004003228B4 /* Settings.storyboard */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
 		F6B1B27822D396450086A5A9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1B27722D396450086A5A9 /* Schedule.storyboard */; };
+		F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27922D397490086A5A9 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C18CCB8622D14004003228B4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B1B27722D396450086A5A9 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		F6B1B27922D397490086A5A9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,12 +126,13 @@
 				C18CCB7422D1320F003228B4 /* HomeViewController.swift */,
 				C18CCB7622D13224003228B4 /* AccountViewController.swift */,
 				C18CCB7822D13232003228B4 /* SettingsViewController.swift */,
+				F6B1B27922D397490086A5A9 /* CalendarViewController.swift */,
+				F6B1B27722D396450086A5A9 /* Schedule.storyboard */,
 				C18CCB5222D12CE8003228B4 /* Start.storyboard */,
 				C18CCB8022D135D4003228B4 /* Main.storyboard */,
 				C18CCB8622D14004003228B4 /* Settings.storyboard */,
 				C18CCB8422D13FE9003228B4 /* Account.storyboard */,
 				C18CCB8222D13FCE003228B4 /* Home.storyboard */,
-				F6B1B27722D396450086A5A9 /* Schedule.storyboard */,
 				C18CCB5522D12CE9003228B4 /* Assets.xcassets */,
 				C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */,
 				C18CCB5A22D12CE9003228B4 /* Info.plist */,
@@ -336,6 +339,7 @@
 				C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */,
 				C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */,
 				C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */,
+				F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */,
 				C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
