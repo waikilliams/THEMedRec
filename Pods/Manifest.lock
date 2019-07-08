@@ -64,6 +64,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.2.1):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
+  - KDCalendar (1.6.5)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -76,6 +77,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - KDCalendar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -89,6 +91,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - KDCalendar
     - leveldb-library
     - nanopb
 
@@ -103,9 +106,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: a35a645835bae31b6bdc0576396bc23908f12a22
   GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  KDCalendar: 15e74f37bd3d206bf7549c594fd08e0347c276f4
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 91b55f8e5c4e821a1a2ceb8082af877a284847a5
+PODFILE CHECKSUM: f6209e51bfcb43f2649e0c6422ef6d55acdf4901
 
 COCOAPODS: 1.5.2

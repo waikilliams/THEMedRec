@@ -24,8 +24,19 @@
 		C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8422D13FE9003228B4 /* Account.storyboard */; };
 		C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8622D14004003228B4 /* Settings.storyboard */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
-		F6B1B27822D396450086A5A9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1B27722D396450086A5A9 /* Schedule.storyboard */; };
 		F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27922D397490086A5A9 /* CalendarViewController.swift */; };
+		F6B1B28722D39BFF0086A5A9 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */; };
+		F6B1B28822D39BFF0086A5A9 /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */; };
+		F6B1B28922D39BFF0086A5A9 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */; };
+		F6B1B28A22D39BFF0086A5A9 /* CalendarView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */; };
+		F6B1B28B22D39BFF0086A5A9 /* CalendarView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */; };
+		F6B1B28C22D39BFF0086A5A9 /* CalendarView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */; };
+		F6B1B28D22D39BFF0086A5A9 /* CalendarView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */; };
+		F6B1B28E22D39BFF0086A5A9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */; };
+		F6B1B28F22D39BFF0086A5A9 /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */; };
+		F6B1B29022D3A1750086A5A9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */; };
+		F6B1B29622D3AABF0086A5A9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29522D3AABF0086A5A9 /* EventKit.framework */; };
+		F6B1B29822D3AADA0086A5A9 /* KDCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +74,20 @@
 		C18CCB8422D13FE9003228B4 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		C18CCB8622D14004003228B4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
-		F6B1B27722D396450086A5A9 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		F6B1B27922D397490086A5A9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
+		F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarFlowLayout.swift; sourceTree = "<group>"; };
+		F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+DataSource.swift"; sourceTree = "<group>"; };
+		F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Delegate.swift"; sourceTree = "<group>"; };
+		F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Extensions.swift"; sourceTree = "<group>"; };
+		F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Style.swift"; sourceTree = "<group>"; };
+		F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		F6B1B29122D3A1750086A5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Schedule.storyboard; sourceTree = "<group>"; };
+		F6B1B29522D3AABF0086A5A9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B1B29922D3ABA40086A5A9 /* CalendarView_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalendarView_iOS.framework; sourceTree = "<group>"; };
 		FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B1B29822D3AADA0086A5A9 /* KDCalendar.framework in Frameworks */,
+				F6B1B29622D3AABF0086A5A9 /* EventKit.framework in Frameworks */,
 				E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +116,8 @@
 		2838A47D0AB60D8D1D87E81D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */,
+				F6B1B29522D3AABF0086A5A9 /* EventKit.framework */,
 				930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */,
 				3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */,
 			);
@@ -100,6 +127,7 @@
 		C18CCB4222D12CE8003228B4 = {
 			isa = PBXGroup;
 			children = (
+				F6B1B29922D3ABA40086A5A9 /* CalendarView_iOS.framework */,
 				C18CCB4D22D12CE8003228B4 /* THEMedRec */,
 				C18CCB6222D12CE9003228B4 /* THEMedRecTests */,
 				C18CCB4C22D12CE8003228B4 /* Products */,
@@ -127,7 +155,8 @@
 				C18CCB7622D13224003228B4 /* AccountViewController.swift */,
 				C18CCB7822D13232003228B4 /* SettingsViewController.swift */,
 				F6B1B27922D397490086A5A9 /* CalendarViewController.swift */,
-				F6B1B27722D396450086A5A9 /* Schedule.storyboard */,
+				F6B1B27D22D39BFF0086A5A9 /* CalendarView */,
+				F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */,
 				C18CCB5222D12CE8003228B4 /* Start.storyboard */,
 				C18CCB8022D135D4003228B4 /* Main.storyboard */,
 				C18CCB8622D14004003228B4 /* Settings.storyboard */,
@@ -159,6 +188,22 @@
 				9A3E00A1FF277071A321DB46 /* Pods-THEMedRecTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6B1B27D22D39BFF0086A5A9 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */,
+				F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */,
+				F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */,
+				F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */,
+				F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */,
+				F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */,
+				F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */,
+				F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */,
+				F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */,
+			);
+			path = CalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +292,7 @@
 			files = (
 				C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */,
 				C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */,
-				F6B1B27822D396450086A5A9 /* Schedule.storyboard in Resources */,
+				F6B1B29022D3A1750086A5A9 /* Schedule.storyboard in Resources */,
 				C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */,
 				C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */,
 				C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */,
@@ -312,6 +357,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KDCalendar/KDCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -319,6 +365,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -334,12 +381,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B1B28822D39BFF0086A5A9 /* CalendarFlowLayout.swift in Sources */,
+				F6B1B28722D39BFF0086A5A9 /* CalendarDayCell.swift in Sources */,
 				C18CCB7322D13203003228B4 /* SignUpViewController.swift in Sources */,
+				F6B1B28922D39BFF0086A5A9 /* CalendarHeaderView.swift in Sources */,
+				F6B1B28D22D39BFF0086A5A9 /* CalendarView+Style.swift in Sources */,
+				F6B1B28E22D39BFF0086A5A9 /* CalendarView.swift in Sources */,
 				C18CCB7722D13224003228B4 /* AccountViewController.swift in Sources */,
+				F6B1B28B22D39BFF0086A5A9 /* CalendarView+Delegate.swift in Sources */,
 				C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */,
+				F6B1B28A22D39BFF0086A5A9 /* CalendarView+DataSource.swift in Sources */,
 				C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */,
 				C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */,
 				F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */,
+				F6B1B28C22D39BFF0086A5A9 /* CalendarView+Extensions.swift in Sources */,
+				F6B1B28F22D39BFF0086A5A9 /* EventsManager.swift in Sources */,
 				C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +433,14 @@
 				C18CCB5822D12CE9003228B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B1B29122D3A1750086A5A9 /* Base */,
+			);
+			name = Schedule.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -504,6 +568,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = THEMedRec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = THEMedRec/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

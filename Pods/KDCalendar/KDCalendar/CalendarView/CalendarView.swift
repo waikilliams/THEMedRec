@@ -24,9 +24,7 @@
  */
 
 import UIKit
-#if KDCALENDAR_EVENT_MANAGER_ENABLED
 import EventKit
-#endif
 
 struct EventLocation {
     let title: String
@@ -49,8 +47,6 @@ public struct CalendarEvent {
 public protocol CalendarViewDataSource {
     func startDate() -> Date
     func endDate() -> Date
-    /* optional */
-    func headerString(_ date: Date) -> String?
 }
 
 extension CalendarViewDataSource {
@@ -61,10 +57,6 @@ extension CalendarViewDataSource {
     func endDate() -> Date {
         return Date()
     }
-    
-    func headerString(_ date: Date) -> String? {
-        return nil
-    }
 }
 
 public protocol CalendarViewDelegate {
@@ -74,13 +66,13 @@ public protocol CalendarViewDelegate {
     /* optional */
     func calendar(_ calendar : CalendarView, canSelectDate date : Date) -> Bool
     func calendar(_ calendar : CalendarView, didDeselectDate date : Date) -> Void
-    func calendar(_ calendar : CalendarView, didLongPressDate date : Date, withEvents events: [CalendarEvent]?) -> Void
+    func calendar(_ calendar : CalendarView, didLongPressDate date : Date) -> Void
 }
 
 extension CalendarViewDelegate {
     func calendar(_ calendar : CalendarView, canSelectDate date : Date) -> Bool { return true }
     func calendar(_ calendar : CalendarView, didDeselectDate date : Date) -> Void { return }
-    func calendar(_ calendar : CalendarView, didLongPressDate date : Date, withEvents events: [CalendarEvent]?) -> Void { return }
+    func calendar(_ calendar : CalendarView, didLongPressDate date : Date) -> Void { return }
 }
 
 public class CalendarView: UIView {
@@ -91,9 +83,9 @@ public class CalendarView: UIView {
     var collectionView: UICollectionView!
     
     public lazy var calendar : Calendar = {
-        var calendarStyle = Calendar(identifier: CalendarView.Style.identifier)
-        calendarStyle.timeZone = CalendarView.Style.timeZone
-        return calendarStyle
+        var gregorian = Calendar(identifier: .gregorian)
+        gregorian.timeZone = TimeZone(abbreviation: "UTC")!
+        return gregorian
     }()
     
     internal var startDateCache     = Date()
@@ -133,7 +125,6 @@ public class CalendarView: UIView {
     
     public var displayDate: Date?
     public var multipleSelectionEnable = true
-    public var enableDeslection = true
     public var marksWeekends = true
     
     public var delegate: CalendarViewDelegate?
@@ -147,7 +138,7 @@ public class CalendarView: UIView {
         }
     }
     #else
-    public var direction : UICollectionView.ScrollDirection = .horizontal {
+    public var direction : UICollectionViewScrollDirection = .horizontal {
         didSet {
             flowLayout.scrollDirection = direction
             self.collectionView.reloadData()
@@ -196,9 +187,7 @@ public class CalendarView: UIView {
         self.collectionView.showsVerticalScrollIndicator    = false
         self.collectionView.allowsMultipleSelection         = false
         self.collectionView.register(CalendarDayCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
-        if #available(iOS 9.0, *) {
-            self.collectionView.semanticContentAttribute = .forceLeftToRight // forces western style language orientation
-        }
+        self.collectionView.semanticContentAttribute = .forceLeftToRight // forces western style language orientation
         self.addSubview(self.collectionView)
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(CalendarView.handleLongPress))
@@ -214,7 +203,7 @@ public class CalendarView: UIView {
             return
         }
         #else
-        guard gesture.state == UIGestureRecognizer.State.began else {
+        guard gesture.state == UIGestureRecognizerState.began else {
             return
         }
         #endif
@@ -227,14 +216,7 @@ public class CalendarView: UIView {
             return
         }
         
-        guard
-            let indexPathEvents = collectionView.indexPathForItem(at: point),
-            let events = self.eventsByIndexPath[indexPathEvents], events.count > 0 else {
-                self.delegate?.calendar(self, didLongPressDate: date, withEvents: nil)
-                return
-        }
-        
-        self.delegate?.calendar(self, didLongPressDate: date, withEvents: events)
+        self.delegate?.calendar(self, didLongPressDate: date)
     }
     
     override open func layoutSubviews() {
@@ -371,7 +353,7 @@ extension CalendarView {
         #if swift(>=4.2)
         self.collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition())
         #else
-            self.collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition())
+            self.collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionViewScrollPosition())
         #endif
         self.collectionView(collectionView, didSelectItemAt: indexPath)
     }
@@ -403,8 +385,6 @@ extension CalendarView {
     public func goToPreviousMonth() {
         goToMonthWithOffet(-1)
     }
-
-   // #if KDCALENDAR_EVENT_MANAGER_ENABLED
     
     public func loadEvents(onComplete: ((Error?) -> Void)? = nil) {
         
@@ -420,7 +400,7 @@ extension CalendarView {
         }
     }
     
-    @discardableResult public func addEvent(_ title: String, date startDate: Date, duration hours: NSInteger = 1) -> Bool {
+    @discardableResult public func addEvent(_ title: String, date startDate: Date, duration hours: Int) -> Bool {
         
         var components = DateComponents()
         components.hour = hours
@@ -442,6 +422,4 @@ extension CalendarView {
         return true
         
     }
-
-   // #endif
 }

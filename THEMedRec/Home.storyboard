@@ -13,27 +13,33 @@
         <!--MedRec-->
         <scene sceneID="3BS-6l-C2f">
             <objects>
-                <viewController id="agG-5B-P2P" sceneMemberID="viewController">
+                <viewController id="agG-5B-P2P" customClass="HomeViewController" customModule="THEMedRec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MLS-OJ-bP4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U0-8J-EiW">
-                                <rect key="frame" x="155.5" y="143" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U0-8J-EiW">
+                                <rect key="frame" x="155" y="220" width="64" height="30"/>
                                 <state key="normal" title="Schedule"/>
                                 <connections>
                                     <segue destination="XvU-dC-Nzg" kind="showDetail" id="61t-Hy-lIf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUZ-jh-c7t">
-                                <rect key="frame" x="149" y="318" width="77" height="30"/>
+                                <rect key="frame" x="149" y="395" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Patient List"/>
+                                <connections>
+                                    <segue destination="XvU-dC-Nzg" kind="showDetail" id="6D0-3x-ryO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKh-Mf-cyE">
-                                <rect key="frame" x="149" y="468" width="76" height="30"/>
+                                <rect key="frame" x="149" y="545" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Messenger"/>
+                                <connections>
+                                    <segue destination="XvU-dC-Nzg" kind="show" id="qqa-mI-QR9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,12 +52,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0H-de-qCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-543" y="-107"/>
+            <point key="canvasLocation" x="-543.20000000000005" y="-107.49625187406298"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="65n-d1-Maf">
             <objects>
-                <viewControllerPlaceholder referencedIdentifier="Schedule" id="XvU-dC-Nzg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Schedule" id="XvU-dC-Nzg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEK-ob-UDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="302" y="-365"/>
@@ -82,4 +88,7 @@
         <image name="home" width="25" height="25"/>
         <image name="home-selected" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="61t-Hy-lIf"/>
+    </inferredMetricsTieBreakers>
 </document>
