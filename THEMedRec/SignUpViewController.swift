@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var signUpBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,27 @@ class SignUpViewController: UIViewController {
         bottomLayerUsername.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.5)
         bottomLayerUsername.backgroundColor = UIColor(displayP3Red: 50/255, green: 50/255, blue: 50/255, alpha: 1).cgColor
         usernameTF.layer.addSublayer(bottomLayerUsername)
+        
+        handleTextField()
+        
+    }
+    
+    @objc func handleTextField() {
+        usernameTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        emailTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+    }
+    
+    @objc func textFieldDidChange() {
+        guard let username = usernameTF.text, !username.isEmpty, let email = emailTF.text, !email.isEmpty, let password = passwordTF.text, !password.isEmpty else {
+            signUpBtn.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+            signUpBtn.isEnabled = false
+            return
+        }
+        
+        signUpBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        signUpBtn.isEnabled = true
+        
     }
     
     @IBAction func b2SignIn(_ sender: Any) {
@@ -52,23 +74,23 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpBtn(_ sender: Any) {
-    
+        
         Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!, completion: { (user, error: Error?) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
             }
-            
-            let ref = Database.database().reference()
-            let usersRef = ref.child("users")
             let uid = user?.user.uid
-            let newUserRef = usersRef.child(uid!)
-            newUserRef.setValue(["username": self.usernameTF.text!, "email": self.emailTF.text!])
-            print("description: \(newUserRef.description())")
-            
+            self.setUserInformation(username: self.usernameTF.text!, email: self.emailTF.text!, uid: uid!)
         })
-    
     }
     
+    func setUserInformation(username: String, email: String, uid: String) {
+        let ref = Database.database().reference()
+        let usersRef = ref.child("users")
+        let newUserRef = usersRef.child(uid)
+        newUserRef.setValue(["username": username, "email": email])
+        self.performSegue(withIdentifier: "signUpToTabBarVC", sender: nil)
+    }
     
 }

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var signInBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -35,6 +37,43 @@ class SignInViewController: UIViewController {
         bottomLayerPassword.backgroundColor = UIColor(displayP3Red: 50/255, green: 50/255, blue: 50/255, alpha: 1).cgColor
         passwordTF.layer.addSublayer(bottomLayerPassword)
         
+        handleTextField()
+ 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "signInToTabBarVC", sender: nil)
+        }
+    }
+    
+    @objc func handleTextField() {
+        emailTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
+    }
+    
+    @objc func textFieldDidChange() {
+        guard let email = emailTF.text, !email.isEmpty, let password = passwordTF.text, !password.isEmpty else {
+            signInBtn.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+            signInBtn.isEnabled = false
+            return
+        }
+        
+        signInBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        signInBtn.isEnabled = true
+        
+    }
+    
+    @IBAction func signInBtn_TouchUpInside(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!, completion: { (user, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+            }
+            self.performSegue(withIdentifier: "signInToTabBarVC", sender: nil)
+        })
+    }
+    
     
 }

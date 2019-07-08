@@ -12,6 +12,12 @@ PODS:
   - Firebase/Database (6.3.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 6.0.0)
+<<<<<<< Updated upstream
+=======
+  - Firebase/Storage (6.3.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.2.1)
+>>>>>>> Stashed changes
   - FirebaseAnalytics (6.0.2):
     - FirebaseCore (~> 6.0)
     - FirebaseInstanceID (~> 4.2)
@@ -39,6 +45,10 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseStorage (3.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (6.0.2):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -77,7 +87,11 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+<<<<<<< Updated upstream
   - KDCalendar
+=======
+  - Firebase/Storage
+>>>>>>> Stashed changes
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -88,6 +102,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
@@ -103,6 +118,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 68f8a7f50cdae542715d4e86afa37c4067217dcb
   FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
   FirebaseInstanceID: f20243a1d828e0e9a3798b995174dedc16f1b32a
+  FirebaseStorage: 926d41552072b9fee67aa645760f05f87b7ce604
   GoogleAppMeasurement: a35a645835bae31b6bdc0576396bc23908f12a22
   GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
@@ -110,6 +126,10 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
+<<<<<<< Updated upstream
 PODFILE CHECKSUM: f6209e51bfcb43f2649e0c6422ef6d55acdf4901
+=======
+PODFILE CHECKSUM: 7eb44028215d8e505538d2e63b1914e3d9127f59
+>>>>>>> Stashed changes
 
 COCOAPODS: 1.5.2
