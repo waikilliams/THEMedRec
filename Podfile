@@ -9,7 +9,7 @@ target 'THEMedRec' do
 	pod 'Firebase/Core'
   	pod 'Firebase/Auth'
   	pod 'Firebase/Database'
-	pod 'Firebase/Firestore'
+	pod 'Firebase/Analytics'
 	
   target 'THEMedRecTests' do
     inherit! :search_paths
