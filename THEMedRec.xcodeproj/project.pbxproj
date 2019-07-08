@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBC20870C3B8181143583DA6 /* Pods_THEMedRecTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */; };
 		C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */; };
-		C18CCB5122D12CE8003228B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB5022D12CE8003228B4 /* ViewController.swift */; };
-		C18CCB5422D12CE8003228B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5222D12CE8003228B4 /* Main.storyboard */; };
+		C18CCB5422D12CE8003228B4 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5222D12CE8003228B4 /* Start.storyboard */; };
 		C18CCB5622D12CE9003228B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5522D12CE9003228B4 /* Assets.xcassets */; };
 		C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */; };
 		C18CCB6422D12CE9003228B4 /* THEMedRecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */; };
+		C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */; };
+		C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7022D131F1003228B4 /* SignInViewController.swift */; };
+		C18CCB7322D13203003228B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7222D13203003228B4 /* SignUpViewController.swift */; };
+		C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7422D1320F003228B4 /* HomeViewController.swift */; };
+		C18CCB7722D13224003228B4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7622D13224003228B4 /* AccountViewController.swift */; };
+		C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7822D13232003228B4 /* SettingsViewController.swift */; };
+		C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8022D135D4003228B4 /* Main.storyboard */; };
+		C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8222D13FCE003228B4 /* Home.storyboard */; };
+		C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8422D13FE9003228B4 /* Account.storyboard */; };
+		C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8622D14004003228B4 /* Settings.storyboard */; };
+		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THEMedRecTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718D077236C23781909F12DE /* Pods-THEMedRec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.release.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.release.xcconfig"; sourceTree = "<group>"; };
+		930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THEMedRec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3E00A1FF277071A321DB46 /* Pods-THEMedRecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.release.xcconfig"; sourceTree = "<group>"; };
 		C18CCB4B22D12CE8003228B4 /* THEMedRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEMedRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C18CCB5022D12CE8003228B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C18CCB5322D12CE8003228B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C18CCB5322D12CE8003228B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		C18CCB5522D12CE9003228B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C18CCB5822D12CE9003228B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C18CCB5A22D12CE9003228B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18CCB5F22D12CE9003228B4 /* THEMedRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THEMedRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THEMedRecTests.swift; sourceTree = "<group>"; };
 		C18CCB6522D12CE9003228B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C18CCB7022D131F1003228B4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C18CCB7222D13203003228B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C18CCB7422D1320F003228B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C18CCB7622D13224003228B4 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C18CCB7822D13232003228B4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C18CCB8022D135D4003228B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C18CCB8222D13FCE003228B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C18CCB8422D13FE9003228B4 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		C18CCB8622D14004003228B4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
+		FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC20870C3B8181143583DA6 /* Pods_THEMedRecTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2838A47D0AB60D8D1D87E81D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */,
+				3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C18CCB4222D12CE8003228B4 = {
 			isa = PBXGroup;
 			children = (
 				C18CCB4D22D12CE8003228B4 /* THEMedRec */,
 				C18CCB6222D12CE9003228B4 /* THEMedRecTests */,
 				C18CCB4C22D12CE8003228B4 /* Products */,
+				EDEDC233B90022FC6C5E148B /* Pods */,
+				2838A47D0AB60D8D1D87E81D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +117,20 @@
 			isa = PBXGroup;
 			children = (
 				C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */,
-				C18CCB5022D12CE8003228B4 /* ViewController.swift */,
-				C18CCB5222D12CE8003228B4 /* Main.storyboard */,
+				C18CCB7022D131F1003228B4 /* SignInViewController.swift */,
+				C18CCB7222D13203003228B4 /* SignUpViewController.swift */,
+				C18CCB7422D1320F003228B4 /* HomeViewController.swift */,
+				C18CCB7622D13224003228B4 /* AccountViewController.swift */,
+				C18CCB7822D13232003228B4 /* SettingsViewController.swift */,
+				C18CCB5222D12CE8003228B4 /* Start.storyboard */,
+				C18CCB8022D135D4003228B4 /* Main.storyboard */,
+				C18CCB8622D14004003228B4 /* Settings.storyboard */,
+				C18CCB8422D13FE9003228B4 /* Account.storyboard */,
+				C18CCB8222D13FCE003228B4 /* Home.storyboard */,
 				C18CCB5522D12CE9003228B4 /* Assets.xcassets */,
 				C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */,
 				C18CCB5A22D12CE9003228B4 /* Info.plist */,
+				C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */,
 			);
 			path = THEMedRec;
 			sourceTree = "<group>";
@@ -96,6 +144,17 @@
 			path = THEMedRecTests;
 			sourceTree = "<group>";
 		};
+		EDEDC233B90022FC6C5E148B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */,
+				718D077236C23781909F12DE /* Pods-THEMedRec.release.xcconfig */,
+				FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */,
+				9A3E00A1FF277071A321DB46 /* Pods-THEMedRecTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C18CCB6822D12CE9003228B4 /* Build configuration list for PBXNativeTarget "THEMedRec" */;
 			buildPhases = (
+				02459EF96E988B7E26565FFD /* [CP] Check Pods Manifest.lock */,
 				C18CCB4722D12CE8003228B4 /* Sources */,
 				C18CCB4822D12CE8003228B4 /* Frameworks */,
 				C18CCB4922D12CE8003228B4 /* Resources */,
+				6758C5E34AEF8EB0FF510386 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C18CCB6B22D12CE9003228B4 /* Build configuration list for PBXNativeTarget "THEMedRecTests" */;
 			buildPhases = (
+				0C6A1461A61E9F9AD2B59F50 /* [CP] Check Pods Manifest.lock */,
 				C18CCB5B22D12CE9003228B4 /* Sources */,
 				C18CCB5C22D12CE9003228B4 /* Frameworks */,
 				C18CCB5D22D12CE9003228B4 /* Resources */,
@@ -178,8 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */,
+				C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */,
+				C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */,
+				C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */,
+				C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */,
 				C18CCB5622D12CE9003228B4 /* Assets.xcassets in Resources */,
-				C18CCB5422D12CE8003228B4 /* Main.storyboard in Resources */,
+				C18CCB5422D12CE8003228B4 /* Start.storyboard in Resources */,
+				C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +259,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02459EF96E988B7E26565FFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THEMedRec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C6A1461A61E9F9AD2B59F50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-THEMedRecTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6758C5E34AEF8EB0FF510386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C18CCB4722D12CE8003228B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C18CCB5122D12CE8003228B4 /* ViewController.swift in Sources */,
+				C18CCB7322D13203003228B4 /* SignUpViewController.swift in Sources */,
+				C18CCB7722D13224003228B4 /* AccountViewController.swift in Sources */,
+				C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */,
 				C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */,
+				C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */,
+				C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +363,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C18CCB5222D12CE8003228B4 /* Main.storyboard */ = {
+		C18CCB5222D12CE8003228B4 /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C18CCB5322D12CE8003228B4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 		C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */ = {
@@ -358,6 +500,7 @@
 		};
 		C18CCB6922D12CE9003228B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +518,7 @@
 		};
 		C18CCB6A22D12CE9003228B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718D077236C23781909F12DE /* Pods-THEMedRec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +536,7 @@
 		};
 		C18CCB6C22D12CE9003228B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +557,7 @@
 		};
 		C18CCB6D22D12CE9003228B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3E00A1FF277071A321DB46 /* Pods-THEMedRecTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

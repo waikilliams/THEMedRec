@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>814228223613-nnbggtv0or2372rdjvmnnh31i6vn2ilb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.814228223613-nnbggtv0or2372rdjvmnnh31i6vn2ilb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzRh4YW2F2U39TlMp_9Fwmgmjm1skPJSk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>814228223613</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.THEMedRec</string>
+	<key>PROJECT_ID</key>
+	<string>themedrec-ed54f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>themedrec-ed54f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:814228223613:ios:89a1cbaf0f62152b</string>
+	<key>DATABASE_URL</key>
+	<string>https://themedrec-ed54f.firebaseio.com</string>
+</dict>
+</plist>
