@@ -24,6 +24,7 @@
 		C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8422D13FE9003228B4 /* Account.storyboard */; };
 		C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8622D14004003228B4 /* Settings.storyboard */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
+		F6B1B27822D396450086A5A9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1B27722D396450086A5A9 /* Schedule.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C18CCB8422D13FE9003228B4 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		C18CCB8622D14004003228B4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
+		F6B1B27722D396450086A5A9 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		FB1329646A70F33CB03C613D /* Pods-THEMedRecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				C18CCB8622D14004003228B4 /* Settings.storyboard */,
 				C18CCB8422D13FE9003228B4 /* Account.storyboard */,
 				C18CCB8222D13FCE003228B4 /* Home.storyboard */,
+				F6B1B27722D396450086A5A9 /* Schedule.storyboard */,
 				C18CCB5522D12CE9003228B4 /* Assets.xcassets */,
 				C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */,
 				C18CCB5A22D12CE9003228B4 /* Info.plist */,
@@ -241,6 +244,7 @@
 			files = (
 				C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */,
 				C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */,
+				F6B1B27822D396450086A5A9 /* Schedule.storyboard in Resources */,
 				C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */,
 				C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */,
 				C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */,

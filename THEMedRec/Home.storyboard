@@ -17,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="MLS-OJ-bP4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U0-8J-EiW">
+                                <rect key="frame" x="155.5" y="143" width="64" height="30"/>
+                                <state key="normal" title="Schedule"/>
+                                <connections>
+                                    <segue destination="XvU-dC-Nzg" kind="showDetail" id="61t-Hy-lIf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUZ-jh-c7t">
+                                <rect key="frame" x="149" y="318" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Patient List"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKh-Mf-cyE">
+                                <rect key="frame" x="149" y="468" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Messenger"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1U0-8J-EiW" firstAttribute="centerX" secondItem="MLS-OJ-bP4" secondAttribute="centerX" id="LTL-zW-CiC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jaP-36-abv"/>
                     </view>
                     <navigationItem key="navigationItem" title="MedRec" id="mbD-lA-ErN"/>
@@ -25,6 +47,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0H-de-qCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-543" y="-107"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="65n-d1-Maf">
+            <objects>
+                <viewControllerPlaceholder referencedIdentifier="Schedule" id="XvU-dC-Nzg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEK-ob-UDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-365"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="khF-v9-gzy">
