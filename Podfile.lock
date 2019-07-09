@@ -12,12 +12,9 @@ PODS:
   - Firebase/Database (6.3.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 6.0.0)
-<<<<<<< Updated upstream
-=======
   - Firebase/Storage (6.3.0):
     - Firebase/CoreOnly
     - FirebaseStorage (~> 3.2.1)
->>>>>>> Stashed changes
   - FirebaseAnalytics (6.0.2):
     - FirebaseCore (~> 6.0)
     - FirebaseInstanceID (~> 4.2)
@@ -81,17 +78,16 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - ProgressHUD (2.60)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
-<<<<<<< Updated upstream
-  - KDCalendar
-=======
   - Firebase/Storage
->>>>>>> Stashed changes
+  - KDCalendar
+  - ProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -109,6 +105,7 @@ SPEC REPOS:
     - KDCalendar
     - leveldb-library
     - nanopb
+    - ProgressHUD
 
 SPEC CHECKSUMS:
   Firebase: 8432d732974498afd5987e9001a05f90f1a3d625
@@ -125,11 +122,8 @@ SPEC CHECKSUMS:
   KDCalendar: 15e74f37bd3d206bf7549c594fd08e0347c276f4
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
 
-<<<<<<< Updated upstream
-PODFILE CHECKSUM: f6209e51bfcb43f2649e0c6422ef6d55acdf4901
-=======
-PODFILE CHECKSUM: 7eb44028215d8e505538d2e63b1914e3d9127f59
->>>>>>> Stashed changes
+PODFILE CHECKSUM: 039b94b45b079140d6a4d1bb34c1c468297c53f3
 
 COCOAPODS: 1.5.2

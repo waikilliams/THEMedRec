@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+import ProgressHUD
 
 class SignInViewController: UIViewController {
 
@@ -36,7 +38,8 @@ class SignInViewController: UIViewController {
         bottomLayerPassword.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.5)
         bottomLayerPassword.backgroundColor = UIColor(displayP3Red: 50/255, green: 50/255, blue: 50/255, alpha: 1).cgColor
         passwordTF.layer.addSublayer(bottomLayerPassword)
-        
+        signInBtn.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+        signInBtn.isEnabled = false
         handleTextField()
  
     }
@@ -47,6 +50,8 @@ class SignInViewController: UIViewController {
             self.performSegue(withIdentifier: "signInToTabBarVC", sender: nil)
         }
     }
+    
+
     
     @objc func handleTextField() {
         emailTF.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControl.Event.editingChanged)
@@ -66,12 +71,14 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInBtn_TouchUpInside(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTF.text!, password: passwordTF.text!, completion: { (user, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
+        view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
+        self.validateFields()
+        self.signIn(onSuccess: {
+            ProgressHUD.showSuccess("Success")
             self.performSegue(withIdentifier: "signInToTabBarVC", sender: nil)
+        }, onError: { (errorMessage) in
+            ProgressHUD.showError(errorMessage)
         })
     }
     

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import ProgressHUD
 
 class SignUpViewController: UIViewController {
 
@@ -46,7 +48,8 @@ class SignUpViewController: UIViewController {
         bottomLayerUsername.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.5)
         bottomLayerUsername.backgroundColor = UIColor(displayP3Red: 50/255, green: 50/255, blue: 50/255, alpha: 1).cgColor
         usernameTF.layer.addSublayer(bottomLayerUsername)
-        
+        signUpBtn.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
+        signUpBtn.isEnabled = false
         handleTextField()
         
     }
@@ -74,23 +77,16 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpBtn(_ sender: Any) {
-        
-        Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!, completion: { (user, error: Error?) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            let uid = user?.user.uid
-            self.setUserInformation(username: self.usernameTF.text!, email: self.emailTF.text!, uid: uid!)
+        view.endEditing(true)
+        ProgressHUD.show("Waiting...", interaction: false)
+        self.validateFields()
+        self.signUp(onSuccess: {
+            ProgressHUD.showSuccess("Success")
+            self.performSegue(withIdentifier: "signUpToTabBarVC", sender: nil)
+            }, onError: { (errorMessage) in
+            ProgressHUD.showError(errorMessage)
         })
     }
     
-    func setUserInformation(username: String, email: String, uid: String) {
-        let ref = Database.database().reference()
-        let usersRef = ref.child("users")
-        let newUserRef = usersRef.child(uid)
-        newUserRef.setValue(["username": username, "email": email])
-        self.performSegue(withIdentifier: "signUpToTabBarVC", sender: nil)
-    }
     
 }
