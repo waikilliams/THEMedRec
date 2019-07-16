@@ -18,6 +18,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,8 @@ class SignUpViewController: UIViewController {
         signUpBtn.isEnabled = false
         handleTextField()
         
+        profileImage.layer.cornerRadius = 75
+        profileImage.clipsToBounds = true
     }
     
     @objc func handleTextField() {

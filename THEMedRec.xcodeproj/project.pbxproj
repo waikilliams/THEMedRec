@@ -3,43 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BBC20870C3B8181143583DA6 /* Pods_THEMedRecTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */; };
-		C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */; };
-		C18CCB5422D12CE8003228B4 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5222D12CE8003228B4 /* Start.storyboard */; };
-		C18CCB5622D12CE9003228B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5522D12CE9003228B4 /* Assets.xcassets */; };
-		C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */; };
 		C18CCB6422D12CE9003228B4 /* THEMedRecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */; };
-		C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */; };
-		C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7022D131F1003228B4 /* SignInViewController.swift */; };
-		C18CCB7322D13203003228B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7222D13203003228B4 /* SignUpViewController.swift */; };
-		C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7422D1320F003228B4 /* HomeViewController.swift */; };
-		C18CCB7722D13224003228B4 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7622D13224003228B4 /* AccountViewController.swift */; };
-		C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB7822D13232003228B4 /* SettingsViewController.swift */; };
-		C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8022D135D4003228B4 /* Main.storyboard */; };
-		C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8222D13FCE003228B4 /* Home.storyboard */; };
-		C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8422D13FE9003228B4 /* Account.storyboard */; };
-		C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18CCB8622D14004003228B4 /* Settings.storyboard */; };
-		C1926A7B22D50E8500F6CC6A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1926A7A22D50E8500F6CC6A /* Api.swift */; };
-		C1926A7D22D515D100F6CC6A /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1926A7C22D515D100F6CC6A /* SignUpViewController+UI.swift */; };
-		C1926A7F22D5174F00F6CC6A /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1926A7E22D5174F00F6CC6A /* UserApi.swift */; };
-		C1926A8122D51BD600F6CC6A /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1926A8022D51BD600F6CC6A /* SignInViewController+UI.swift */; };
-		C1926A8322D5206700F6CC6A /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1926A8222D5206700F6CC6A /* Ref.swift */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
-		F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27922D397490086A5A9 /* CalendarViewController.swift */; };
-		F6B1B28722D39BFF0086A5A9 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */; };
-		F6B1B28822D39BFF0086A5A9 /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */; };
-		F6B1B28922D39BFF0086A5A9 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */; };
-		F6B1B28A22D39BFF0086A5A9 /* CalendarView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */; };
-		F6B1B28B22D39BFF0086A5A9 /* CalendarView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */; };
-		F6B1B28C22D39BFF0086A5A9 /* CalendarView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */; };
-		F6B1B28D22D39BFF0086A5A9 /* CalendarView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */; };
-		F6B1B28E22D39BFF0086A5A9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */; };
-		F6B1B28F22D39BFF0086A5A9 /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */; };
-		F6B1B29022D3A1750086A5A9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */; };
+		F021592422DD05A600A2A530 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F021592322DD05A600A2A530 /* User.swift */; };
+		F0667DB922DCDFC900B4DE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667D9E22DCDFC900B4DE18 /* LaunchScreen.storyboard */; };
+		F0667DBA22DCDFC900B4DE18 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667D9F22DCDFC900B4DE18 /* Start.storyboard */; };
+		F0667DBB22DCDFC900B4DE18 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA022DCDFC900B4DE18 /* Home.storyboard */; };
+		F0667DBC22DCDFC900B4DE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA122DCDFC900B4DE18 /* Main.storyboard */; };
+		F0667DBD22DCDFC900B4DE18 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */; };
+		F0667DBE22DCDFC900B4DE18 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA322DCDFC900B4DE18 /* Settings.storyboard */; };
+		F0667DBF22DCDFC900B4DE18 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA422DCDFC900B4DE18 /* Account.storyboard */; };
+		F0667DC022DCDFC900B4DE18 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DA622DCDFC900B4DE18 /* SignUpViewController+UI.swift */; };
+		F0667DC122DCDFC900B4DE18 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DA722DCDFC900B4DE18 /* SignInViewController+UI.swift */; };
+		F0667DC222DCDFC900B4DE18 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DA922DCDFC900B4DE18 /* SignUpViewController.swift */; };
+		F0667DC422DCDFC900B4DE18 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DAB22DCDFC900B4DE18 /* HomeViewController.swift */; };
+		F0667DC522DCDFC900B4DE18 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DAC22DCDFC900B4DE18 /* CalendarViewController.swift */; };
+		F0667DC622DCDFC900B4DE18 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DAD22DCDFC900B4DE18 /* AccountViewController.swift */; };
+		F0667DC722DCDFC900B4DE18 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DAE22DCDFC900B4DE18 /* SignInViewController.swift */; };
+		F0667DC822DCDFC900B4DE18 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DAF22DCDFC900B4DE18 /* SettingsViewController.swift */; };
+		F0667DC922DCDFC900B4DE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0667DB122DCDFC900B4DE18 /* Assets.xcassets */; };
+		F0667DCA22DCDFC900B4DE18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0667DB222DCDFC900B4DE18 /* GoogleService-Info.plist */; };
+		F0667DCC22DCDFC900B4DE18 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DB522DCDFC900B4DE18 /* UserApi.swift */; };
+		F0667DCD22DCDFC900B4DE18 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DB622DCDFC900B4DE18 /* Ref.swift */; };
+		F0667DCE22DCDFC900B4DE18 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DB722DCDFC900B4DE18 /* Api.swift */; };
+		F0667DCF22DCDFC900B4DE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DB822DCDFC900B4DE18 /* AppDelegate.swift */; };
+		F0667DD122DCEF2900B4DE18 /* MessgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DD022DCEF2900B4DE18 /* MessgeTableViewController.swift */; };
+		F0667DD322DCF5C000B4DE18 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */; };
+		F0667DD522DCF68600B4DE18 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DD422DCF68600B4DE18 /* Messages.storyboard */; };
 		F6B1B29622D3AABF0086A5A9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29522D3AABF0086A5A9 /* EventKit.framework */; };
 		F6B1B29822D3AADA0086A5A9 /* KDCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */; };
 /* End PBXBuildFile section */
@@ -60,41 +55,36 @@
 		930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THEMedRec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3E00A1FF277071A321DB46 /* Pods-THEMedRecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRecTests/Pods-THEMedRecTests.release.xcconfig"; sourceTree = "<group>"; };
 		C18CCB4B22D12CE8003228B4 /* THEMedRec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THEMedRec.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C18CCB5322D12CE8003228B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
-		C18CCB5522D12CE9003228B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C18CCB5822D12CE9003228B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C18CCB5A22D12CE9003228B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18CCB5F22D12CE9003228B4 /* THEMedRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THEMedRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THEMedRecTests.swift; sourceTree = "<group>"; };
 		C18CCB6522D12CE9003228B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C18CCB7022D131F1003228B4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		C18CCB7222D13203003228B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		C18CCB7422D1320F003228B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C18CCB7622D13224003228B4 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		C18CCB7822D13232003228B4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		C18CCB8022D135D4003228B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C18CCB8222D13FCE003228B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		C18CCB8422D13FE9003228B4 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		C18CCB8622D14004003228B4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		C1926A7A22D50E8500F6CC6A /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		C1926A7C22D515D100F6CC6A /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
-		C1926A7E22D5174F00F6CC6A /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
-		C1926A8022D51BD600F6CC6A /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
-		C1926A8222D5206700F6CC6A /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		F021592322DD05A600A2A530 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F0667D9E22DCDFC900B4DE18 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0667D9F22DCDFC900B4DE18 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		F0667DA022DCDFC900B4DE18 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F0667DA122DCDFC900B4DE18 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		F0667DA322DCDFC900B4DE18 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F0667DA422DCDFC900B4DE18 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		F0667DA622DCDFC900B4DE18 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		F0667DA722DCDFC900B4DE18 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		F0667DA922DCDFC900B4DE18 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F0667DAB22DCDFC900B4DE18 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F0667DAC22DCDFC900B4DE18 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F0667DAD22DCDFC900B4DE18 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		F0667DAE22DCDFC900B4DE18 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F0667DAF22DCDFC900B4DE18 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F0667DB122DCDFC900B4DE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0667DB222DCDFC900B4DE18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0667DB322DCDFC900B4DE18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0667DB522DCDFC900B4DE18 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		F0667DB622DCDFC900B4DE18 /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		F0667DB722DCDFC900B4DE18 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		F0667DB822DCDFC900B4DE18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0667DD022DCEF2900B4DE18 /* MessgeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessgeTableViewController.swift; sourceTree = "<group>"; };
+		F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		F0667DD422DCF68600B4DE18 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
-		F6B1B27922D397490086A5A9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
-		F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarFlowLayout.swift; sourceTree = "<group>"; };
-		F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
-		F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+DataSource.swift"; sourceTree = "<group>"; };
-		F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Delegate.swift"; sourceTree = "<group>"; };
-		F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Extensions.swift"; sourceTree = "<group>"; };
-		F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Style.swift"; sourceTree = "<group>"; };
-		F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
-		F6B1B29122D3A1750086A5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Schedule.storyboard; sourceTree = "<group>"; };
 		F6B1B29522D3AABF0086A5A9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B1B29922D3ABA40086A5A9 /* CalendarView_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalendarView_iOS.framework; sourceTree = "<group>"; };
@@ -137,8 +127,8 @@
 		C18CCB4222D12CE8003228B4 = {
 			isa = PBXGroup;
 			children = (
+				F0667D9C22DCDFC900B4DE18 /* THEMedRec */,
 				F6B1B29922D3ABA40086A5A9 /* CalendarView_iOS.framework */,
-				C18CCB4D22D12CE8003228B4 /* THEMedRec */,
 				C18CCB6222D12CE9003228B4 /* THEMedRecTests */,
 				C18CCB4C22D12CE8003228B4 /* Products */,
 				EDEDC233B90022FC6C5E148B /* Pods */,
@@ -153,36 +143,6 @@
 				C18CCB5F22D12CE9003228B4 /* THEMedRecTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C18CCB4D22D12CE8003228B4 /* THEMedRec */ = {
-			isa = PBXGroup;
-			children = (
-				C18CCB4E22D12CE8003228B4 /* AppDelegate.swift */,
-				C1926A7A22D50E8500F6CC6A /* Api.swift */,
-				C1926A7E22D5174F00F6CC6A /* UserApi.swift */,
-				C18CCB7022D131F1003228B4 /* SignInViewController.swift */,
-				C1926A8022D51BD600F6CC6A /* SignInViewController+UI.swift */,
-				C18CCB7222D13203003228B4 /* SignUpViewController.swift */,
-				C1926A7C22D515D100F6CC6A /* SignUpViewController+UI.swift */,
-				C1926A8222D5206700F6CC6A /* Ref.swift */,
-				C18CCB7422D1320F003228B4 /* HomeViewController.swift */,
-				C18CCB7622D13224003228B4 /* AccountViewController.swift */,
-				C18CCB7822D13232003228B4 /* SettingsViewController.swift */,
-				F6B1B27922D397490086A5A9 /* CalendarViewController.swift */,
-				F6B1B27D22D39BFF0086A5A9 /* CalendarView */,
-				F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */,
-				C18CCB5222D12CE8003228B4 /* Start.storyboard */,
-				C18CCB8022D135D4003228B4 /* Main.storyboard */,
-				C18CCB8622D14004003228B4 /* Settings.storyboard */,
-				C18CCB8422D13FE9003228B4 /* Account.storyboard */,
-				C18CCB8222D13FCE003228B4 /* Home.storyboard */,
-				C18CCB5522D12CE9003228B4 /* Assets.xcassets */,
-				C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */,
-				C18CCB5A22D12CE9003228B4 /* Info.plist */,
-				C18CCB6E22D12E31003228B4 /* GoogleService-Info.plist */,
-			);
-			path = THEMedRec;
 			sourceTree = "<group>";
 		};
 		C18CCB6222D12CE9003228B4 /* THEMedRecTests */ = {
@@ -205,20 +165,77 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F6B1B27D22D39BFF0086A5A9 /* CalendarView */ = {
+		F0667D9C22DCDFC900B4DE18 /* THEMedRec */ = {
 			isa = PBXGroup;
 			children = (
-				F6B1B27E22D39BFF0086A5A9 /* CalendarDayCell.swift */,
-				F6B1B27F22D39BFF0086A5A9 /* CalendarFlowLayout.swift */,
-				F6B1B28022D39BFF0086A5A9 /* CalendarHeaderView.swift */,
-				F6B1B28122D39BFF0086A5A9 /* CalendarView+DataSource.swift */,
-				F6B1B28222D39BFF0086A5A9 /* CalendarView+Delegate.swift */,
-				F6B1B28322D39BFF0086A5A9 /* CalendarView+Extensions.swift */,
-				F6B1B28422D39BFF0086A5A9 /* CalendarView+Style.swift */,
-				F6B1B28522D39BFF0086A5A9 /* CalendarView.swift */,
-				F6B1B28622D39BFF0086A5A9 /* EventsManager.swift */,
+				F0667D9D22DCDFC900B4DE18 /* Storyboards */,
+				F0667DA522DCDFC900B4DE18 /* Extensions */,
+				F0667DA822DCDFC900B4DE18 /* ViewControllers */,
+				F0667DB022DCDFC900B4DE18 /* SupportingFiles */,
+				F0667DB422DCDFC900B4DE18 /* Controllers */,
 			);
-			path = CalendarView;
+			path = THEMedRec;
+			sourceTree = "<group>";
+		};
+		F0667D9D22DCDFC900B4DE18 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F0667D9E22DCDFC900B4DE18 /* LaunchScreen.storyboard */,
+				F0667D9F22DCDFC900B4DE18 /* Start.storyboard */,
+				F0667DA022DCDFC900B4DE18 /* Home.storyboard */,
+				F0667DD422DCF68600B4DE18 /* Messages.storyboard */,
+				F0667DA122DCDFC900B4DE18 /* Main.storyboard */,
+				F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */,
+				F0667DA322DCDFC900B4DE18 /* Settings.storyboard */,
+				F0667DA422DCDFC900B4DE18 /* Account.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F0667DA522DCDFC900B4DE18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0667DA622DCDFC900B4DE18 /* SignUpViewController+UI.swift */,
+				F0667DA722DCDFC900B4DE18 /* SignInViewController+UI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0667DA822DCDFC900B4DE18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0667DA922DCDFC900B4DE18 /* SignUpViewController.swift */,
+				F0667DAB22DCDFC900B4DE18 /* HomeViewController.swift */,
+				F0667DAC22DCDFC900B4DE18 /* CalendarViewController.swift */,
+				F0667DAD22DCDFC900B4DE18 /* AccountViewController.swift */,
+				F0667DAE22DCDFC900B4DE18 /* SignInViewController.swift */,
+				F0667DAF22DCDFC900B4DE18 /* SettingsViewController.swift */,
+				F0667DD022DCEF2900B4DE18 /* MessgeTableViewController.swift */,
+				F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0667DB022DCDFC900B4DE18 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F0667DB122DCDFC900B4DE18 /* Assets.xcassets */,
+				F0667DB222DCDFC900B4DE18 /* GoogleService-Info.plist */,
+				F0667DB322DCDFC900B4DE18 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F0667DB422DCDFC900B4DE18 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0667DB522DCDFC900B4DE18 /* UserApi.swift */,
+				F0667DB622DCDFC900B4DE18 /* Ref.swift */,
+				F0667DB722DCDFC900B4DE18 /* Api.swift */,
+				F0667DB822DCDFC900B4DE18 /* AppDelegate.swift */,
+				F021592322DD05A600A2A530 /* User.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,15 +322,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C18CCB5922D12CE9003228B4 /* LaunchScreen.storyboard in Resources */,
-				C18CCB6F22D12E31003228B4 /* GoogleService-Info.plist in Resources */,
-				F6B1B29022D3A1750086A5A9 /* Schedule.storyboard in Resources */,
-				C18CCB8122D135D4003228B4 /* Main.storyboard in Resources */,
-				C18CCB8722D14004003228B4 /* Settings.storyboard in Resources */,
-				C18CCB8322D13FCE003228B4 /* Home.storyboard in Resources */,
-				C18CCB5622D12CE9003228B4 /* Assets.xcassets in Resources */,
-				C18CCB5422D12CE8003228B4 /* Start.storyboard in Resources */,
-				C18CCB8522D13FE9003228B4 /* Account.storyboard in Resources */,
+				F0667DBB22DCDFC900B4DE18 /* Home.storyboard in Resources */,
+				F0667DB922DCDFC900B4DE18 /* LaunchScreen.storyboard in Resources */,
+				F0667DCA22DCDFC900B4DE18 /* GoogleService-Info.plist in Resources */,
+				F0667DBA22DCDFC900B4DE18 /* Start.storyboard in Resources */,
+				F0667DBE22DCDFC900B4DE18 /* Settings.storyboard in Resources */,
+				F0667DBC22DCDFC900B4DE18 /* Main.storyboard in Resources */,
+				F0667DBD22DCDFC900B4DE18 /* Schedule.storyboard in Resources */,
+				F0667DC922DCDFC900B4DE18 /* Assets.xcassets in Resources */,
+				F0667DD522DCF68600B4DE18 /* Messages.storyboard in Resources */,
+				F0667DBF22DCDFC900B4DE18 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,27 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/KDCalendar/KDCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-THEMedRec/Pods-THEMedRec-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -398,27 +405,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1926A8122D51BD600F6CC6A /* SignInViewController+UI.swift in Sources */,
-				C1926A7B22D50E8500F6CC6A /* Api.swift in Sources */,
-				C1926A7F22D5174F00F6CC6A /* UserApi.swift in Sources */,
-				F6B1B28822D39BFF0086A5A9 /* CalendarFlowLayout.swift in Sources */,
-				F6B1B28722D39BFF0086A5A9 /* CalendarDayCell.swift in Sources */,
-				C18CCB7322D13203003228B4 /* SignUpViewController.swift in Sources */,
-				F6B1B28922D39BFF0086A5A9 /* CalendarHeaderView.swift in Sources */,
-				F6B1B28D22D39BFF0086A5A9 /* CalendarView+Style.swift in Sources */,
-				C1926A8322D5206700F6CC6A /* Ref.swift in Sources */,
-				F6B1B28E22D39BFF0086A5A9 /* CalendarView.swift in Sources */,
-				C18CCB7722D13224003228B4 /* AccountViewController.swift in Sources */,
-				F6B1B28B22D39BFF0086A5A9 /* CalendarView+Delegate.swift in Sources */,
-				C1926A7D22D515D100F6CC6A /* SignUpViewController+UI.swift in Sources */,
-				C18CCB7122D131F1003228B4 /* SignInViewController.swift in Sources */,
-				F6B1B28A22D39BFF0086A5A9 /* CalendarView+DataSource.swift in Sources */,
-				C18CCB4F22D12CE8003228B4 /* AppDelegate.swift in Sources */,
-				C18CCB7522D1320F003228B4 /* HomeViewController.swift in Sources */,
-				F6B1B27A22D397490086A5A9 /* CalendarViewController.swift in Sources */,
-				F6B1B28C22D39BFF0086A5A9 /* CalendarView+Extensions.swift in Sources */,
-				F6B1B28F22D39BFF0086A5A9 /* EventsManager.swift in Sources */,
-				C18CCB7922D13232003228B4 /* SettingsViewController.swift in Sources */,
+				F0667DC522DCDFC900B4DE18 /* CalendarViewController.swift in Sources */,
+				F0667DCC22DCDFC900B4DE18 /* UserApi.swift in Sources */,
+				F0667DC422DCDFC900B4DE18 /* HomeViewController.swift in Sources */,
+				F0667DC622DCDFC900B4DE18 /* AccountViewController.swift in Sources */,
+				F0667DCD22DCDFC900B4DE18 /* Ref.swift in Sources */,
+				F0667DC222DCDFC900B4DE18 /* SignUpViewController.swift in Sources */,
+				F0667DCE22DCDFC900B4DE18 /* Api.swift in Sources */,
+				F0667DC722DCDFC900B4DE18 /* SignInViewController.swift in Sources */,
+				F021592422DD05A600A2A530 /* User.swift in Sources */,
+				F0667DCF22DCDFC900B4DE18 /* AppDelegate.swift in Sources */,
+				F0667DC122DCDFC900B4DE18 /* SignInViewController+UI.swift in Sources */,
+				F0667DC022DCDFC900B4DE18 /* SignUpViewController+UI.swift in Sources */,
+				F0667DC822DCDFC900B4DE18 /* SettingsViewController.swift in Sources */,
+				F0667DD122DCEF2900B4DE18 /* MessgeTableViewController.swift in Sources */,
+				F0667DD322DCF5C000B4DE18 /* NewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,33 +440,6 @@
 			targetProxy = C18CCB6022D12CE9003228B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C18CCB5222D12CE8003228B4 /* Start.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C18CCB5322D12CE8003228B4 /* Base */,
-			);
-			name = Start.storyboard;
-			sourceTree = "<group>";
-		};
-		C18CCB5722D12CE9003228B4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C18CCB5822D12CE9003228B4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F6B1B29222D3A1750086A5A9 /* Schedule.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6B1B29122D3A1750086A5A9 /* Base */,
-			);
-			name = Schedule.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C18CCB6622D12CE9003228B4 /* Debug */ = {
@@ -594,7 +568,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = THEMedRec/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/THEMedRec/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,7 +590,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = THEMedRec/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/THEMedRec/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
