@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import ProgressHUD
+import FirebaseStorage
 
 class SignUpViewController: UIViewController {
 
@@ -20,6 +21,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,9 +55,7 @@ class SignUpViewController: UIViewController {
         signUpBtn.setTitleColor(UIColor.lightText, for: UIControl.State.normal)
         signUpBtn.isEnabled = false
         handleTextField()
-        
-        profileImage.layer.cornerRadius = 75
-        profileImage.clipsToBounds = true
+        setupProfileImage()
     }
     
     @objc func handleTextField() {

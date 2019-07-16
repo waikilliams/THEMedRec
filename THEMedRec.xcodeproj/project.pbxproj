@@ -35,6 +35,7 @@
 		F0667DD122DCEF2900B4DE18 /* MessgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DD022DCEF2900B4DE18 /* MessgeTableViewController.swift */; };
 		F0667DD322DCF5C000B4DE18 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */; };
 		F0667DD522DCF68600B4DE18 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DD422DCF68600B4DE18 /* Messages.storyboard */; };
+		F67AAFE222DE5033000BCABE /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67AAFE122DE5033000BCABE /* StorageService.swift */; };
 		F6B1B29622D3AABF0086A5A9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29522D3AABF0086A5A9 /* EventKit.framework */; };
 		F6B1B29822D3AADA0086A5A9 /* KDCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		F0667DD422DCF68600B4DE18 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		F647F7270FBC058287124A46 /* Pods-THEMedRec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THEMedRec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THEMedRec/Pods-THEMedRec.debug.xcconfig"; sourceTree = "<group>"; };
+		F67AAFE122DE5033000BCABE /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		F6B1B29522D3AABF0086A5A9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		F6B1B29722D3AADA0086A5A9 /* KDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B1B29922D3ABA40086A5A9 /* CalendarView_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalendarView_iOS.framework; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				F0667DB722DCDFC900B4DE18 /* Api.swift */,
 				F0667DB822DCDFC900B4DE18 /* AppDelegate.swift */,
 				F021592322DD05A600A2A530 /* User.swift */,
+				F67AAFE122DE5033000BCABE /* StorageService.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				F0667DC422DCDFC900B4DE18 /* HomeViewController.swift in Sources */,
 				F0667DC622DCDFC900B4DE18 /* AccountViewController.swift in Sources */,
 				F0667DCD22DCDFC900B4DE18 /* Ref.swift in Sources */,
+				F67AAFE222DE5033000BCABE /* StorageService.swift in Sources */,
 				F0667DC222DCDFC900B4DE18 /* SignUpViewController.swift in Sources */,
 				F0667DCE22DCDFC900B4DE18 /* Api.swift in Sources */,
 				F0667DC722DCDFC900B4DE18 /* SignInViewController.swift in Sources */,
