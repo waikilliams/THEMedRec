@@ -116,7 +116,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func seg2Sched() {
-        
+       performSegue(withIdentifier: "seg2Schedule", sender: nil)
     }
     
     @objc func seg2PatLs() {

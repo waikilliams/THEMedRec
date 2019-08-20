@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BBC20870C3B8181143583DA6 /* Pods_THEMedRecTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3675E43549B20D4B614D8AF2 /* Pods_THEMedRecTests.framework */; };
 		C18CCB6422D12CE9003228B4 /* THEMedRecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */; };
+		C191248C230C4FD3002D18D9 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */; };
+		C1912490230C5132002D18D9 /* ScheduleTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C191248F230C5132002D18D9 /* ScheduleTable.storyboard */; };
+		C1912492230C54AD002D18D9 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1912491230C54AD002D18D9 /* Calendar.storyboard */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
 		F011610422E0F5F100D433B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011610322E0F5F100D433B2 /* Extensions.swift */; };
 		F0143F6222FBD26D004DF047 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0143F6122FBD26D004DF047 /* ChatLogController.swift */; };
@@ -18,7 +21,6 @@
 		F0667DBA22DCDFC900B4DE18 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667D9F22DCDFC900B4DE18 /* Start.storyboard */; };
 		F0667DBB22DCDFC900B4DE18 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA022DCDFC900B4DE18 /* Home.storyboard */; };
 		F0667DBC22DCDFC900B4DE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA122DCDFC900B4DE18 /* Main.storyboard */; };
-		F0667DBD22DCDFC900B4DE18 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */; };
 		F0667DBE22DCDFC900B4DE18 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA322DCDFC900B4DE18 /* Settings.storyboard */; };
 		F0667DBF22DCDFC900B4DE18 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0667DA422DCDFC900B4DE18 /* Account.storyboard */; };
 		F0667DC022DCDFC900B4DE18 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0667DA622DCDFC900B4DE18 /* SignUpViewController+UI.swift */; };
@@ -58,6 +60,9 @@
 		C18CCB5F22D12CE9003228B4 /* THEMedRecTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THEMedRecTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18CCB6322D12CE9003228B4 /* THEMedRecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THEMedRecTests.swift; sourceTree = "<group>"; };
 		C18CCB6522D12CE9003228B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		C191248F230C5132002D18D9 /* ScheduleTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleTable.storyboard; sourceTree = "<group>"; };
+		C1912491230C54AD002D18D9 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		F011610322E0F5F100D433B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F0143F6122FBD26D004DF047 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		F0143F6322FBF0BE004DF047 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		F0667D9F22DCDFC900B4DE18 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		F0667DA022DCDFC900B4DE18 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F0667DA122DCDFC900B4DE18 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		F0667DA322DCDFC900B4DE18 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		F0667DA422DCDFC900B4DE18 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		F0667DA622DCDFC900B4DE18 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
@@ -182,10 +186,11 @@
 				F0667D9F22DCDFC900B4DE18 /* Start.storyboard */,
 				F0667DA022DCDFC900B4DE18 /* Home.storyboard */,
 				F0667DA122DCDFC900B4DE18 /* Main.storyboard */,
-				F0667DA222DCDFC900B4DE18 /* Schedule.storyboard */,
 				F0667DA322DCDFC900B4DE18 /* Settings.storyboard */,
 				F0667DA422DCDFC900B4DE18 /* Account.storyboard */,
 				F0E4267B22F9ECD50036DD4E /* MessagesTable.storyboard */,
+				C191248F230C5132002D18D9 /* ScheduleTable.storyboard */,
+				C1912491230C54AD002D18D9 /* Calendar.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				F0667DD022DCEF2900B4DE18 /* MessageTableViewController.swift */,
 				F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */,
 				F0143F6122FBD26D004DF047 /* ChatLogController.swift */,
+				C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -326,11 +332,12 @@
 				F0667DCA22DCDFC900B4DE18 /* GoogleService-Info.plist in Resources */,
 				F0667DBA22DCDFC900B4DE18 /* Start.storyboard in Resources */,
 				F0667DBE22DCDFC900B4DE18 /* Settings.storyboard in Resources */,
+				C1912492230C54AD002D18D9 /* Calendar.storyboard in Resources */,
 				F0667DBC22DCDFC900B4DE18 /* Main.storyboard in Resources */,
-				F0667DBD22DCDFC900B4DE18 /* Schedule.storyboard in Resources */,
 				F0667DC922DCDFC900B4DE18 /* Assets.xcassets in Resources */,
 				F0667DBF22DCDFC900B4DE18 /* Account.storyboard in Resources */,
 				F0E4267C22F9ECD50036DD4E /* MessagesTable.storyboard in Resources */,
+				C1912490230C5132002D18D9 /* ScheduleTable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C191248C230C4FD3002D18D9 /* ScheduleTableViewController.swift in Sources */,
 				F0667DC522DCDFC900B4DE18 /* CalendarViewController.swift in Sources */,
 				F0667DC422DCDFC900B4DE18 /* HomeViewController.swift in Sources */,
 				F0667DC622DCDFC900B4DE18 /* AccountViewController.swift in Sources */,
