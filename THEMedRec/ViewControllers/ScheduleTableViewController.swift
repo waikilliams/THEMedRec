@@ -26,4 +26,8 @@ class ScheduleTableViewController: UITableViewController {
     @objc func seg2CalendarView() {
         performSegue(withIdentifier: "seg2Calendar", sender: nil)
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
 }

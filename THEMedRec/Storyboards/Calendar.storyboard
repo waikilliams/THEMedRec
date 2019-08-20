@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calendar View Controller-->
+        <!--CalendarVC-->
         <scene sceneID="7Co-66-ogn">
             <objects>
-                <viewController storyboardIdentifier="navCalendar" id="L4x-zn-C7z" customClass="CalendarViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="navCalendar" id="L4x-zn-C7z" customClass="CalendarVC" customModule="THEMedRec" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMy-xO-uhJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

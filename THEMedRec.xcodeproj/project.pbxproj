@@ -12,6 +12,8 @@
 		C191248C230C4FD3002D18D9 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */; };
 		C1912490230C5132002D18D9 /* ScheduleTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C191248F230C5132002D18D9 /* ScheduleTable.storyboard */; };
 		C1912492230C54AD002D18D9 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1912491230C54AD002D18D9 /* Calendar.storyboard */; };
+		C1912494230C59B3002D18D9 /* Visits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1912493230C59B3002D18D9 /* Visits.swift */; };
+		C1912496230C6046002D18D9 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1912495230C6046002D18D9 /* CalendarVC.swift */; };
 		E65B78C9CB50B39FE20A3073 /* Pods_THEMedRec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F3E3283B6ECC139224B03 /* Pods_THEMedRec.framework */; };
 		F011610422E0F5F100D433B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011610322E0F5F100D433B2 /* Extensions.swift */; };
 		F0143F6222FBD26D004DF047 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0143F6122FBD26D004DF047 /* ChatLogController.swift */; };
@@ -63,6 +65,8 @@
 		C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		C191248F230C5132002D18D9 /* ScheduleTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScheduleTable.storyboard; sourceTree = "<group>"; };
 		C1912491230C54AD002D18D9 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		C1912493230C59B3002D18D9 /* Visits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visits.swift; sourceTree = "<group>"; };
+		C1912495230C6046002D18D9 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		F011610322E0F5F100D433B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F0143F6122FBD26D004DF047 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		F0143F6322FBF0BE004DF047 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				F0667DD222DCF5C000B4DE18 /* NewMessageViewController.swift */,
 				F0143F6122FBD26D004DF047 /* ChatLogController.swift */,
 				C191248B230C4FD3002D18D9 /* ScheduleTableViewController.swift */,
+				C1912495230C6046002D18D9 /* CalendarVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				F0667DB822DCDFC900B4DE18 /* AppDelegate.swift */,
 				F021592322DD05A600A2A530 /* User.swift */,
 				F0143F6322FBF0BE004DF047 /* Message.swift */,
+				C1912493230C59B3002D18D9 /* Visits.swift */,
 				F069A4DE22FC9A4300E1F9BF /* UserCell.swift */,
 				F08981DC230AE2D100559022 /* ChatMessageCell.swift */,
 			);
@@ -428,6 +434,8 @@
 				F0143F6222FBD26D004DF047 /* ChatLogController.swift in Sources */,
 				F0667DD322DCF5C000B4DE18 /* NewMessageViewController.swift in Sources */,
 				F0143F6422FBF0BF004DF047 /* Message.swift in Sources */,
+				C1912494230C59B3002D18D9 /* Visits.swift in Sources */,
+				C1912496230C6046002D18D9 /* CalendarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
