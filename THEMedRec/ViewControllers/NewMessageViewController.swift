@@ -24,21 +24,19 @@ class NewMessageViewController: UITableViewController {
     }
     
     func fetchUser() {
-        let rootRef = Database.database().reference()
-        let query = rootRef.child("users").queryOrdered(byChild: "username")
-        query.observe(.value) { (snapshot) in
-            for child in snapshot.children.allObjects as! [DataSnapshot] {
-                if let value = child.value as? NSDictionary {
-                    let user = User()
-                    let username = value["username"] as? String ?? "Userame not found"
-                    let email = value["email"] as? String ?? "Email not found"
-                    user.username = username
-                    user.email = email
-                    self.users.append(user)
-                    DispatchQueue.main.async { self.tableView.reloadData() }
-                }
+        Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                let user = User(dictionary: dictionary)
+                user.id = snapshot.key
+                self.users.append(user)
+                
+                DispatchQueue.main.async(execute: {
+                    self.tableView.reloadData()
+                })
             }
-        }
+            
+        }, withCancel: nil)
     }
     
     @objc func handleCancel() {
@@ -51,25 +49,31 @@ class NewMessageViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! UserCell
         
         let user = users[indexPath.row]
         cell.textLabel?.text = user.username
         cell.detailTextLabel?.text = user.email
         
-        return cell
         
-    }
-}
-
-class UserCell: UITableViewCell {
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        if let profileImageUrl = user.profileImageUrl {
+            cell.profileImageView.loadImagesUsingCacheWithUrlString(profileImageUrl)
+        }
+        
+        return cell
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implimented")
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 72
+    }
+    
+    var messagesController: MessageTableViewController?
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true) {
+            let user = self.users[indexPath.row]
+            self.messagesController?.showChatControllerForUser(user: user)
+        }
     }
     
 }

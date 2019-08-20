@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgm-QR-rSw">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgm-QR-rSw">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="cUa-IK-Dah">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarid" id="Mgm-QR-rSw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="navMain" id="Mgm-QR-rSw" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxy-Ty-Q7v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -32,7 +32,7 @@
         <scene sceneID="qWJ-Bo-8Cc">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="navHome" id="09J-aJ-dm8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="83Q-cg-kcr"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home-selected" id="83Q-cg-kcr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnK-mH-ELh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +42,7 @@
         <scene sceneID="PTX-Dr-1eK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="navAccount" id="BnW-O2-nNm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jzA-Ja-CyD"/>
+                    <tabBarItem key="tabBarItem" title="" image="account" selectedImage="account-selected" id="jzA-Ja-CyD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfD-GO-Xz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,11 +52,19 @@
         <scene sceneID="Dxy-IT-GJG">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="navSettings" id="59X-ab-aSV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vkg-30-bgs"/>
+                    <tabBarItem key="tabBarItem" title="" image="settings" selectedImage="settings-selected" id="vkg-30-bgs"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ch5-oZ-xAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1712.8" y="-907.1964017991005"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="account" width="25" height="25"/>
+        <image name="account-selected" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="home-selected" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
+        <image name="settings-selected" width="25" height="25"/>
+    </resources>
 </document>
